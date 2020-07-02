@@ -169,17 +169,21 @@ body{
       font-family: 'BebasNeue-Regular';
       color: #6ed6f0;
       font-size: 71px;
+      margin: 0;
+      padding: 0;
+      line-height: 71px;
     }
     p{
       font-family: 'bahnschrift';
       font-size: 26px;
       color: #ffffff;
+      padding-top: 25px;
     }
     .banner-conetnt {
-      padding-top: 15%;
+      padding-top: 9%;
       overflow: hidden;
       text-align: center;
-      padding-bottom: 10%;
+      padding-bottom: 14%;
   }
   .social-icons {
     margin: 0;
@@ -201,22 +205,25 @@ body{
 
 .about-section{
   text-align: center;
-  padding: 50px 0;
+  padding: 35px 0 0 0;
     h2{
         font-family: 'BebasNeue-Bold';
         color: #ec3f70;
         font-size: 71px;
+        padding-bottom: 15px;
     }
     p{
-      font-size: 21px;
+      font-size: 20px;
       color: #000000;
+      padding-bottom: 35px;
+      line-height: 25px;
     }
 }
 
 .events-section{
   background-image: url(images/events-bg.png);
   background-size: cover;
-  padding: 50px 0;
+  padding: 65px 0;
   text-align: center;
   color: #fff;
   h2{
@@ -228,23 +235,90 @@ body{
   }
 }
 
+.past-events-section{
+  text-align: center;
+  padding: 65px 0;
+      h2{
+        font-size: 71px;
+        font-family: 'BebasNeue-Bold';
+        color: #71a52f;
+    }
+    .event-btn{
+      background-image: url(images/event-btn-bg.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      text-align: center;
+      margin: auto;
+      display: block;
+      width: 60%;
+      h3{
+        font-size: 25px;
+        font-family: 'bahnschrift';
+        text-align: left;
+        color: #fff;
+        padding: 9px 32px;
+      }
+    }
+}
+
+.events-gallery{
+  .item-gallery{
+    width: 20%;
+    float: left;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+  }
+  overflow: hidden;
+}
+
+.event-gallery-btn{
+
+        background-image: url(images/event-btn-gallery-bg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        text-align: center;
+        margin: auto;
+        display: block;
+        width: 32%;
+        margin: 32px auto;
+      h3{
+        font-size: 25px;
+        font-family: 'bahnschrift';
+        text-align: left;
+        color: #71a52f;
+        padding: 18px 32px;
+      }
+    }
+
+
+
+
+
+
+
+
 .upcoming-events-section{
   background: linear-gradient(#eb3e70, #b00b7a);
-  padding: 50px 0;
+  padding: 58px 0 50px 0;
   text-align: center;
   color: #fff;
     h2{
       font-size: 71px;
       font-family: 'BebasNeue-Bold';
+      padding-bottom: 10px;
+      box-sizing: padding-box;
     }
     p{
      font-size: 28px;
+     text-transform: uppercase;
     }
 }
 
 .our-partner-section{
   background: #fff;
-  padding: 50px 0;
+  padding: 68px 0;
   text-align: center;
   color: #4db8dd;
     h2{
@@ -259,13 +333,13 @@ body{
 .latest-news-section{
   background-image: url(images/news-bg.jpg);
   background-size: cover;
-  padding: 50px 0;
+  padding: 60px 0;
   h1{
     text-align: center;
     color: #000000;
     font-family: 'BebasNeue-Bold';
     font-size: 71px;
-    margin-bottom: 30px;
+    margin-bottom: 55px;
   }
   .latest-news{
     margin-bottom: 30px;
@@ -310,12 +384,13 @@ body{
 }
 
 .follow-us-section{
-  padding: 50px 0;
+  padding: 30px 0;
   .follow-us-part{
     h1{
       color: #a0ca27;
       font-family: 'BebasNeue-Bold';
       font-size: 71px;
+      padding-bottom: 30px;
     }
     .follow-us{
       margin:0;
@@ -354,6 +429,6 @@ footer{
     font-family: 'bahnschrift';
     font-size: 14px;
     color: #ffffff;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
 }
