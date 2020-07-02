@@ -58,26 +58,22 @@ body{
     transition: height 0.3s;
     text-align:center;
     padding: 0;
-    &.shirnk{
-      height: 67px;
-      background: #3BA2FB;
+    &.shrink{
+       position: fixed;
+      background: #000000a3 !important;
+      height: 89px;
+      padding: 20px 10px !important;
       .navbar-toggler i, .navbar-light .navbar-toggler i{
           color: #000;
           font-size: 35px;
         }
-       .phone-number h2{
-         color: #000;
-       }
-       .phone-number h6{
-         color: #000;
-       }
       .navbar-brand{
         img{
-            width: 150px;
+            width: 120px;
         }
       }
     }
-    &.shirnk:before{
+    &.shrink:before{
       height: 100%;
     }
 
@@ -266,8 +262,51 @@ body{
     width: 20%;
     float: left;
     overflow: hidden;
+
+     position: relative;
+    height: 300px;
+    overflow: hidden;
+        .inner_content {
+        position: absolute;
+        z-index: 99;
+        top: 0;
+        left: 0;
+        background: #90ba57b8;
+        height: 100%;
+        width: 100%;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        transition: 0.5s;
+        align-items: center;
+        h2{
+          font-size: 20px;
+          color: #fff;
+           font-family: 'bahnschrift';
+           a{
+            font-size: 20px;
+            color: #fff;
+            text-decoration: none;
+           }
+        }
+    }
     img{
-      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      min-height: 100%;
+      min-width: 100%;
+      width: initial;
+      height: 100%;
+      transition: .5s;
+    }
+    &:hover img{
+      transform: scale(1.2) rotate(5deg);
+    }
+     &:hover .inner_content{
+       opacity: 1;
+       cursor: pointer;
     }
   }
   overflow: hidden;
