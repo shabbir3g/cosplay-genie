@@ -53,10 +53,9 @@
 
 @media all and (max-width: 767px){
 	.events-gallery .item-gallery {
-		width: 100%;
-		float: none;
+		width: 50%;
+		float: left;
 		overflow: hidden;
-		margin-bottom: 40px;
 	}
 	.events-gallery {
 		overflow: hidden;
@@ -80,6 +79,21 @@
 	}
 	.follow-us-section {
 		padding:  0;
+	}
+
+	.header-top-fixed.shrink .navbar-brand {
+		padding: 0;
+	}
+	.header-top-fixed.shrink {
+		padding: 19px 10px !important;
+	}
+	.navbar-brand {
+		position: relative;
+		top: -10px;
+	}
+	.toogle-button {
+		position: relative;
+		top: -10px;
 	}
 }
 
@@ -126,5 +140,10 @@
 	}
 	.follow-us li img {
 		width: 40px;
+	}
+	.events-gallery .item-gallery {
+		width: 100%;
+		float: none;
+		overflow: hidden;
 	}
 }

@@ -11,9 +11,7 @@
   src:url('fonts/bahnschrift.ttf');
 }
 
-.divider-450{
-   min-height: 450px;
-}
+
 body{
   font-family: 'bahnschrift';
   color: #666;
@@ -26,7 +24,7 @@ body{
 .navbar-brand {
 	float: left;
 	height: inherit;
-	padding: 15px 15px;
+	padding: 25px 15px;
 	font-size: 18px;
 	line-height: 20px;
 }
@@ -72,6 +70,9 @@ body{
             width: 120px;
         }
       }
+
+
+    
     }
     &.shrink:before{
       height: 100%;

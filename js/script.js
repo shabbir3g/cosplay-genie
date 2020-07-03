@@ -8,10 +8,33 @@
 	$(document).ready(function(){
 
 
+		
 
-		
-		
-		
+
+		  jQuery('a.nav-link[href*=#]:not([href=#])').click(function(e) {
+
+
+		  	e.preventDefault();
+
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+		      var target = jQuery(this.hash);
+		      target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        jQuery('html,body').animate({
+		          scrollTop: target.offset().top -90
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+
+
+
+		$('body').smoothScroll({
+        delegateSelector: 'ul.navbar-nav a'
+      	});
+
 		 var shrinkHeader = 200;
 		  jQuery(window).scroll(function() {
 			var scroll = getCurrentScroll();
